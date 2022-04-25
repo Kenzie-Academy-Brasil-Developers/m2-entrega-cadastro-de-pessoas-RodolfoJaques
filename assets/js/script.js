@@ -10,6 +10,8 @@ class Pessoa {
         this._telefone          = telefone
         this._cargo             = cargo 
         this.id                 = id
+
+        this.quantidadeDeCadastrados()
     }
     
     //Adiciona usuario a lista
@@ -101,6 +103,13 @@ class Pessoa {
         }
     }
     return true 
+    }
+
+    //metodo que exibe quantidade de cadastrados
+    quantidadeDeCadastrados(){
+
+        const totalAlunos = document.getElementById("total-alunos");
+        totalAlunos.innerText = this.id
     }
 }
 
